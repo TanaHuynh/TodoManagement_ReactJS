@@ -19,6 +19,7 @@ function App() {
       <Route path='/' element = {<ListToDoComponent/>} ></Route>
       <Route path='/todos' element = {<ListToDoComponent/>} ></Route>
       <Route path='/add-todo' element = {<TodoComponent/>} ></Route>
+      <Route path='/update-todo/:id' element = {<TodoComponent/>} ></Route>
 
     </Routes>
     <FooterComponent/>
