@@ -16,10 +16,11 @@ const LoginComponent = () => {
             console.log(response.data)
 
             const token = 'Bearer ' + response.data.accessToken;
+            const role = response.data.role;
+
             storeToken(token);
 
-            saveLoggedInUser(username);
-
+            saveLoggedInUser(username, role);
             navigator("/todos")
         }).catch(error => {
             console.error(error)
